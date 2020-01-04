@@ -8,6 +8,22 @@ Object.entries = (object) => Object.keys(object).map(
 
 const isObject = (obj) => obj === Object(obj)
 
+const NightTheme = {
+  '--bg-color': '#1c1c1c',
+  '--text-color': '#c4c4c4',
+  '--text-color-light': '#777',
+  '--link-color': '#f1f1f1',
+  '--metadata-color': '#666',
+  '--post-title': '#fff',
+  '--code-bg-color': '#252525',
+  '--code-border': '#222',
+  '--table-border-color': '#292929',
+  '--table-header-color': '#505050',
+  '--shadow-color': 'rgba(255, 255, 255, 0.1)',
+  '--invert-logo-color': 'invert(1)',
+  themeName: 'NightTheme'
+}
+
 const LightTheme = {
   '--bg-color': '#eee',
   '--text-color': '#484848',
@@ -24,21 +40,6 @@ const LightTheme = {
   themeName: 'LightTheme'
 }
 
-const NightTheme = {
-  '--bg-color': '#1c1c1c',
-  '--text-color': '#c4c4c4',
-  '--text-color-light': '#777',
-  '--link-color': '#f1f1f1',
-  '--metadata-color': '#666',
-  '--post-title': '#fff',
-  '--code-bg-color': '#252525',
-  '--code-border': '#222',
-  '--table-border-color': '#292929',
-  '--table-header-color': '#505050',
-  '--shadow-color': 'rgba(255, 255, 255, 0.1)',
-  '--invert-logo-color': 'invert(1)',
-  themeName: 'NightTheme'
-}
 
 const setCSSVariable = (key, value) => document.body.style.setProperty(key, value)
 
